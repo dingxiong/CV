@@ -1,0 +1,61 @@
+\documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
+
+\geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
+
+\fontdir[fonts/] % Specify the location of the included fonts
+
+% Color for highlights
+\colorlet{awesome}{awesome-red} % Default colors include: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+%\definecolor{awesome}{HTML}{CA63A8} % Uncomment if you would like to specify your own color
+
+% Colors for text - uncomment and modify
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad} % If you would like to change the social information separator from a pipe (|) to something else
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%----------------------------------------------------------------------------------------
+
+\name{Xiong}{Ding}
+\address{School of Physics, Georgia Institute of Technology, 837 State Street, Atlanta, Georgia 30332-0430 USA}
+\mobile{(+1) 678-882-9228}
+
+\email{xding@gatech.edu}
+\homepage{http://www.cns.gatech.edu/$\sim$xiong/}
+\github{dingxiong}
+\linkedin{Xiong Ding}
+%\skype{skypeid}
+%\stackoverflow{SOid}{SOname}
+%\twitter{@twit}
+
+\position{{Ph.D. student\enskip\cdotp\enskip}Physics researcher} % Your expertise/fields
+%\quote{``Make the change that you want to see in the world."} % A quote or statement
+
+\makecvfooter{\today}{Xiong Ding~~~·~~~Résumé}{\thepage} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvheader % Print the header
+
+%----------------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%----------------------------------------------------------------------------------------
+
+\input{cv_sections_cs/education.tex}
+\input{cv_sections_cs/skills.tex}
+\input{cv_sections_cs/experience.tex}
+\input{cv_sections_cs/project.tex}
+\input{cv_sections_cs/conference.tex}
+\input{cv_sections_cs/publication.tex}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
