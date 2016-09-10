@@ -130,8 +130,10 @@
 % Text colors
 \definecolor{darktext}{HTML}{414141}
 \colorlet{text}{darkgray}
-\colorlet{graytext}{gray}
-\colorlet{lighttext}{lightgray}
+%\colorlet{graytext}{gray}
+\colorlet{graytext}{darkgray}
+%\colorlet{lighttext}{lightgray}
+\colorlet{lighttext}{darkgray}
 % Awesome colors
 \definecolor{awesome-emerald}{HTML}{00A388}
 \definecolor{awesome-skyblue}{HTML}{0395DE}
@@ -615,7 +617,7 @@
 
 \newcommand{\cvpubentry}[4]{
 %\item[] 
-  \fontsize{10pt}{1em}\bodyfontlight [#1]\, #2 ,\, \textit{#3} ,\, {\color{red} #4}
+  \fontsize{9pt}{0.9em}\bodyfontlight [#1]\, #2 ,\, \textit{#3} ,\, {\color{red} #4}
 }
 
 %-------------------------------------------------------------------------------
