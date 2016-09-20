@@ -634,7 +634,7 @@
 
 \newcommand{\cvpubentry}[4]{
 %\item[] 
-  \fontsize{9pt}{0.9em}\bodyfont [#1]\, #2 ,\, \textit{#3} ,\, {\color{red} #4}
+  \fontsize{10pt}{1em}\bodyfont [#1]\, #2 ,\, \textit{#3} ,\, {\color{red} #4}
   \vspace{-0.2em}
 }
 
