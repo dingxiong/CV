@@ -212,31 +212,36 @@
 %-------------------------------------------------------------------------------
 %                Configuration for styles
 %-------------------------------------------------------------------------------
+
+\newcommand{\commonfs}{9pt}
+\newcommand{\commonlss}{0.8em}
 % Configure styles for each CV elements
 % For fundamental structures
-\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{18pt}{1em}\headerfont\color{text} #1}}
-\newcommand*{\headerlastnamestyle}[1]{{\fontsize{18pt}{1em}\headerfont\color{text} #1}}
+\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{16pt}{1em}\headerfont\color{text} #1}}
+\newcommand*{\headerlastnamestyle}[1]{{\fontsize{16pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
 \newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
-\newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
+\newcommand*{\headerquotestyle}[1]{{\fontsize{\commonfs}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 %\newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
-\newcommand*{\sectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text} #1}}
-\newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
-\newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{graytext}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\color{text} #1}}
+\newcommand*{\subsectionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
+\newcommand*{\paragraphstyle}{\fontsize{\commonfs}{1em}\bodyfontlight\upshape\color{graytext}}
 
 % For elements of entry
 %\newcommand*{\entrytitlestyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrytitlestyle}[1]{{\fontsize{12pt}{1em}\bodyfont\color{black} #1}}
+\newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{\commonlss}\bodyfont\color{black} #1}}
+\newcommand*{\entrytitlestylenew}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\color{black} #1}}
 %\newcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{graytext} #1}}
-\newcommand*{\entrydatestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\slshape\color{graytext} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\color{graytext} #1}}
+\newcommand*{\entrydatestyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\slshape\color{graytext} #1}}
 %\newcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\slshape\color{awesome} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\slshape\color{graytext} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\slshape\color{graytext} #1}}
 %\newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\upshape\color{text} #1}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\color{black} #1}}
-\newcommand*{\entrydegreestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{black} #1}}
+\newcommand*{\descriptionstyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfontlight\color{black} #1}}
+\newcommand*{\entrydegreestyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\color{black} #1}}
+
 
 % For elements of subentry
 \newcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{graytext} #1}}
@@ -245,22 +250,16 @@
 \newcommand*{\subentrylocationstyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
 \newcommand*{\subdescriptionstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\upshape\color{text} #1}}
 
-% For elements of honor
-\newcommand*{\honortitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
-\newcommand*{\honorpositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\honordatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
-\newcommand*{\honorlocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
-
 % For elements of skill
-\newcommand*{\skilltypestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\color{black} #1}}
-\newcommand*{\skillsetstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\color{text} #1}}
+\newcommand*{\skilltypestyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\color{black} #1}}
+\newcommand*{\skillsetstyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfontlight\color{text} #1}}
 
 % For elements of the cover letter
 \newcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
-\newcommand*{\recipientaddressstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\newcommand*{\recipientaddressstyle}[1]{{\fontsize{\commonfs}{1em}\bodyfont\scshape\color{graytext} #1}}
 \newcommand*{\recipienttitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\lettertitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\bfseries\color{darktext} \underline{#1}}}
-\newcommand*{\letterdatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
+\newcommand*{\letterdatestyle}[1]{{\fontsize{\commonfs}{1em}\bodyfontlight\slshape\color{graytext} #1}}
 \newcommand*{\lettertextstyle}{\fontsize{10pt}{1.4em}\bodyfontlight\upshape\color{graytext}}
 \newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
@@ -497,11 +496,11 @@
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{%
-  \par\addvspace{1ex}
+  %\par\addvspace{1ex}
   \phantomsection{}
   \sectionstyle{#1}
-  \color{gray}\vhrulefill{0.9pt}
-  \par\nobreak\addvspace{1ex}
+  \color{gray}\vhrulefill{0.5pt}
+  %\par\nobreak\addvspace{1ex}
 }
 
 
@@ -532,29 +531,29 @@
 \newcommand*{\cventry}[5]{%
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 3cm} R{3cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\
   \end{tabular*}
-  \vspace{-0.5em}
+  \vspace{-1em}
 }
 
 \newcommand*{\cventrymore}[6]{%
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 3cm} R{3cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\
       \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\}
-      {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
+      {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\ 
       \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#6}} \\
   \end{tabular*}
-  \vspace{-0.5em}
+  \vspace{-1em}
 }
 
 % Define an environment for cvsubentry
@@ -581,22 +580,6 @@
   \end{tabular*}
 }
 
-% Define an environment for cvhonor
-\newenvironment{cvhonors}{%
-  \begin{center}
-    \setlength\tabcolsep{0pt}
-    \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 4.0cm} R{2.5cm}}
-}{%
-    \end{tabular*}
-  \end{center}
-}
-% Define a line of cv information(honor, award or something else)
-% Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
-\newcommand*{\cvhonor}[4]{%
-  \honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3} \\
-}
-
 % Define an environment for cvskill
 \newenvironment{cvskills}{%
   \begin{center}
@@ -610,7 +593,8 @@
 % Define a line of cv information(skill)
 % Usage: \cvskill{<type>}{<skillset>}
 \newcommand*{\cvskill}[2]{%
-	\skilltypestyle{#1} & \skillsetstyle{#2} \\
+  \vspace{-0.4em}
+  \skilltypestyle{#1} & \skillsetstyle{#2} \\
 }
 
 % Define an environment for cvitems(for cventry)
@@ -637,7 +621,7 @@
 
 \newcommand{\cvpubentry}[4]{
 %\item[] 
-  \fontsize{10pt}{1em}\bodyfont [#1]\, #2 ,\, \textit{#3} ,\, {\color{red} #4}
+  \fontsize{\commonfs}{\commonlss}\bodyfont [#1]\, #2 ,\, \textit{#3} ,\, {\color{red} #4}
   \vspace{-0.2em}
 }
 
@@ -649,8 +633,19 @@
       \entrypositionstyle{#3} & \entrydatestyle{#4} \\
     \multicolumn{4}{L{\textwidth}}{\descriptionstyle{#5}} \\
   \end{tabular*}
-  \vspace{-0.8em}
+  \vspace{-1em}
 }
+
+\newcommand*{\cvproject}[4]{%
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 10cm} R{8cm} R{2cm}}
+      \entrytitlestylenew{#1} & \entrylocationstyle{#2} & \entrypositionstyle{#3} \\
+    \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#4}} \\
+  \end{tabular*}
+  \vspace{-0.5em}
+}
+
 
 %-------------------------------------------------------------------------------
 %                Commands for elements of Cover Letter
@@ -667,7 +662,7 @@
   \par\addvspace{2.5ex}
   \phantomsection{}
   \lettersectionstyle{#1}
-  \color{gray}\vhrulefill{0.9pt}
+  \color{gray}\vhrulefill{0.\commonfs}
   \par\nobreak\addvspace{0.4ex}
 }
 
