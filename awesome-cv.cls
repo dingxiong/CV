@@ -241,6 +241,9 @@
 %\newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\upshape\color{text} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfontlight\color{black} #1}}
 \newcommand*{\entrydegreestyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\color{black} #1}}
+\newcommand*{\industrytitlestyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\color{black} #1}}
+\newcommand*{\researchtitlestyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\color{black} #1}}
+\newcommand*{\researchitemstyle}[1]{{\fontsize{8pt}{1pt}\bodyfont\color{lighttext} #1}}
 
 
 % For elements of subentry
@@ -541,22 +544,6 @@
   \vspace{-1em}
 }
 
-\newcommand*{\cventrymore}[6]{%
-  \setlength\tabcolsep{0pt}
-  \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 3cm} R{3cm}}
-    \ifempty{#2#3}
-      {\entrypositionstyle{#1} & \entrydatestyle{#4} \\
-      \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\}
-      {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\ 
-      \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\
-      \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#6}} \\
-  \end{tabular*}
-  \vspace{-1em}
-}
-
-
 % Define an environment for cvsubentry
 \newenvironment{cvsubentries}{%
   \begin{center}
@@ -647,6 +634,39 @@
   \vspace{-0.5em}
 }
 
+\newcommand*{\cvindustry}[5]{%
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 6.5cm} R{3cm} R{3.5cm}}
+      \industrytitlestyle{#1} & \entrypositionstyle{#2} &
+      \entrydatestyle{#3} \\
+    \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#4}} \\
+    \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#5}} \\
+  \end{tabular*}
+  \vspace{-1em}
+}
+
+\newcommand*{\cvresearch}[5]{%
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 6.5cm} R{3cm} R{3.5cm}}
+      \researchtitlestyle{#1} & \entrypositionstyle{#2} &
+      \entrydatestyle{#3} \\
+    \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#4}} \\
+    \multicolumn{3}{L{\textwidth}}{#5} \\
+  \end{tabular*}
+  \vspace{-1em}
+}
+
+\newcommand*{\cvresearchitem}[2]{%
+	\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+		\item \researchitemstyle{Research topic: \emph{#1}}
+		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+			\item \researchitemstyle{main Result: {#2}}
+		\end{itemize}
+	\end{itemize}
+  %\vspace{-1em}
+}
 
 %-------------------------------------------------------------------------------
 %                Commands for elements of Cover Letter
