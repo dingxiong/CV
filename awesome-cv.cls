@@ -243,7 +243,7 @@
 \newcommand*{\entrydegreestyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\color{black} #1}}
 \newcommand*{\industrytitlestyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\color{black} #1}}
 \newcommand*{\researchtitlestyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\color{black} #1}}
-\newcommand*{\researchitemstyle}[1]{{\fontsize{8pt}{1pt}\bodyfont\color{lighttext} #1}}
+\newcommand*{\researchitemstyle}[1]{{\fontsize{9pt}{1pt}\bodyfont\color{lighttext} #1}}
 
 
 % For elements of subentry
@@ -650,22 +650,38 @@
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 6.5cm} R{3cm} R{3.5cm}}
-      \researchtitlestyle{#1} & \entrypositionstyle{#2} &
-      \entrydatestyle{#3} \\
-    \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#4}} \\
+    \researchtitlestyle{#1} & \entrypositionstyle{#2} & \entrydatestyle{#3} \\
+    \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#4}} \vspace{-0.5em} \\
     \multicolumn{3}{L{\textwidth}}{#5} \\
   \end{tabular*}
   \vspace{-1em}
 }
 
 \newcommand*{\cvresearchitem}[2]{%
-	\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-		\item \researchitemstyle{Research topic: \emph{#1}}
-		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-			\item \researchitemstyle{main Result: {#2}}
-		\end{itemize}
-	\end{itemize}
-  %\vspace{-1em}
+  \vspace{-0.7em}
+  \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+  \item 
+    \researchitemstyle{Research topic:} \descriptionstyle{\emph{#1}}
+    \begin{spacing}{0.5} 
+      \begin{itemize}[leftmargin=2ex, nosep, noitemsep]   
+      \item \researchitemstyle{main Result:} \descriptionstyle{#2}
+      \end{itemize}
+    \end{spacing}
+  \end{itemize}
+  % \vspace{-1em}
+}
+
+\newcommand*{\cvconference}[6]{%
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  {\renewcommand{\arraystretch}{0.7}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 7.5cm} R{3cm} R{4.5cm}}
+      \researchtitlestyle{#1} & \entrypositionstyle{#2} & \entrydatestyle{#3} \\
+      \multicolumn{3}{L{\textwidth}}{\researchitemstyle{#4}: \descriptionstyle{#5} 
+      \quad \quad \descriptionstyle{Coauthor: #6}  }
+    \end{tabular*}
+  }
+  \vspace{-1em}
 }
 
 %-------------------------------------------------------------------------------
