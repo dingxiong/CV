@@ -643,7 +643,7 @@
     \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#4}} \\
     \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#5}} \\
   \end{tabular*}
-  \vspace{-1em}
+  \vspace{-2em}
 }
 
 \newcommand*{\cvresearch}[5]{%
@@ -665,6 +665,20 @@
     \begin{spacing}{0.5} 
       \begin{itemize}[leftmargin=2ex, nosep, noitemsep]   
       \item \researchitemstyle{main Result:} \descriptionstyle{#2}
+      \end{itemize}
+    \end{spacing}
+  \end{itemize}
+  % \vspace{-1em}
+}
+
+\newcommand*{\cvindustryitem}[3]{%
+  \vspace{-0.7em}
+  \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+  \item \researchitemstyle{Achievement:} \descriptionstyle{#1}
+  \item \researchitemstyle{Framework:} \descriptionstyle{#2}
+    \begin{spacing}{0.5} 
+      \begin{itemize}[leftmargin=2ex, nosep, noitemsep]   
+      \item \researchitemstyle{main Features:} \descriptionstyle{#3}
       \end{itemize}
     \end{spacing}
   \end{itemize}
