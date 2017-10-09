@@ -621,7 +621,17 @@
       \entrypositionstyle{#3} & \entrydatestyle{#4} \\
     \multicolumn{4}{L{\textwidth}}{\descriptionstyle{#5}} \\
   \end{tabular*}
-  \vspace{-1em}
+  \vspace{-1.5em}
+}
+
+\newcommand*{\cvmaster}[5]{%
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 13cm} R{2cm} R{4.5cm} R{3cm} R{3.5cm}}
+      \entrydegreestyle{#1} & \entrylocationstyle{#2} &
+			\entrypositionstyle{#3} & \entrydatestyle{#4} & \entrydegreestyle{#5} \\
+  \end{tabular*}
+  \vspace{-1.5em}
 }
 
 \newcommand*{\cvproject}[4]{%
