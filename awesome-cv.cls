@@ -656,18 +656,17 @@
   \vspace{-2em}
 }
 
-\newcommand*{\cvresearch}[5]{%
+\newcommand*{\cvresearch}[4]{%
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 6.5cm} R{3cm} R{3.5cm}}
     \researchtitlestyle{#1} & \entrypositionstyle{#2} & \entrydatestyle{#3} \\
-    \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#4}} \vspace{-0.5em} \\
-    \multicolumn{3}{L{\textwidth}}{#5} \\
+    \multicolumn{3}{L{\textwidth}}{#4} \\
   \end{tabular*}
   \vspace{-1em}
 }
 
-\newcommand*{\cvresearchitem}[2]{%
+\newcommand*{\cvresearchitem}[3]{%
   \vspace{-0.7em}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
   \item 
@@ -675,10 +674,10 @@
     \begin{spacing}{0.5} 
       \begin{itemize}[leftmargin=2ex, nosep, noitemsep]   
       \item \researchitemstyle{main Result:} \descriptionstyle{#2}
+      \item \researchitemstyle{tools/skills used:} \descriptionstyle{#3}
       \end{itemize}
     \end{spacing}
   \end{itemize}
-  % \vspace{-1em}
 }
 
 \newcommand*{\cvindustryitem}[3]{%
