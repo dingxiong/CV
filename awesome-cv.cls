@@ -228,6 +228,7 @@
 \newcommand*{\sectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text} #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{\commonfs}{1em}\bodyfontlight\upshape\color{graytext}}
+\newcommand*{\goalstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\upshape\textcolor{text}{#1}}}
 
 % For elements of entry
 %\newcommand*{\entrytitlestyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
@@ -516,12 +517,19 @@
 
 % Define a paragraph for CV
 \newenvironment{cvparagraph}{%
-  \vspace{-3mm}
+  \vspace{-1mm}
   \paragraphstyle
 }{%
   \vspace{1mm}
 }
 
+\newcommand*{\lookingfor}[1]{
+  \begin{center}
+  ------------------
+  \goalstyle{#1}
+  ------------------
+  \end{center}
+}
 
 % Define an environment for cventry
 \newenvironment{cventries}{%
