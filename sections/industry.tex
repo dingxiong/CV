@@ -2,7 +2,7 @@
 %	SECTION TITLE
 %---------------------------------------------------------------------------
 
-\cvsection{Software Developer Experience}
+\cvsection{Current Experience}
 
 %---------------------------------------------------------------------------
 %	SECTION CONTENT
@@ -21,15 +21,53 @@
 % 	{Django in Python}
 % 	{{\bullet} Email back grades automatically {\bullet} Publish grade statistics {\bullet} Grade panel for course instructors}
 % }
-
 \cvindustry
 {Software Engineer @ Airbnb}{San Francisco, CA, USA}{May. 2017 -- Present}
-{Home Infra team}
+{Infrastructure team}
 {
-	\cvindustryitem
-	{Build and maintain \underline{Ebert} (the review service) for \emph{airbnb.com}}
-	{Dropwizard}
-	{{\bullet} Mcrouter cache enabled {\bullet} Horizontal scalable {\bullet} Accompanied by mutation publisher}
+	\vspace{-0.7em}
+	\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+	\item \researchitemstyle{Main responsibility:} 
+		\descriptionstyle{Build and maintain \underline{Ebert} (the review service) for \emph{airbnb.com}.}
+	\item \researchitemstyle{Details:} 
+		\begin{spacing}{0.3} 
+	    \begin{itemize}[leftmargin=2ex, nosep, noitemsep]   
+	    \item 
+	    	\descriptionstyle{I am the only person who works on this company-wide service.}
+	    \item
+	    	\descriptionstyle{Implement \textbf{review sorting} logic for production page based on review language and user countries.}
+	    \item
+	    	\descriptionstyle{Setup \textbf{review Elasticsearch} cluster for full-text search on reviews on listing pages.}
+	    \item
+	    	\descriptionstyle{Cooperate with core-storage team to build \textbf{review pipeline} to serve review aggregated data, i.e, review count, review overall rating.}
+	    \end{itemize}
+	  \end{spacing}
+	\item \researchitemstyle{Core metrics\&features :} 
+		\begin{spacing}{0.3} 
+	    \begin{itemize}[leftmargin=2ex, nosep, noitemsep]   
+	    \item \researchitemstyle{QPS:} 
+	    	\descriptionstyle{Average: 10K. Peak: 12K. Traffic comes from room description page, user profile page, checkout page and so on.}
+	    \item \researchitemstyle{Number of Rest endpoints:} 
+	    	\descriptionstyle{> 10}
+	    \item \researchitemstyle{Latency:} 
+	    	\descriptionstyle{Overall, P95: $\sim$50ms; $\sim$P99: $\sim$80ms; P999: $\sim$250ms. Different endpoints have different latency.}
+	    \item \researchitemstyle{Features:}
+	    	\descriptionstyle{{\bullet} Mcrouter cache enabled {\bullet} Horizontal scalable {\bullet} Accompanied by mutation publisher}
+	    \end{itemize}
+	  \end{spacing}
+	\item \researchitemstyle{Framework \& tools:} 
+		\descriptionstyle{Dropwizard, Chef, Airflow, Elasticsearch, Mcrouter Cache, Powergrid(multithreading)}
+	\end{itemize}
 }
+
+% \cvindustry
+% {Software Engineer @ Airbnb}{San Francisco, CA, USA}{May. 2017 -- Present}
+% {Home Infra team}
+% {
+% 	\cvindustryitem
+% 	{Build and maintain \underline{Ebert} (the review service) for \emph{airbnb.com}. Being the only person developing this company-wide service.}
+% 	{Dropwizard & Chef}
+% 	{{\bullet} Mcrouter cache enabled {\bullet} Horizontal scalable {\bullet} Accompanied by mutation publisher}
+% }
 
 \end{cventries}
