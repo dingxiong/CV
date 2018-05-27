@@ -2,7 +2,7 @@
 Xiong Ding's Resume / CV
 
 ## how to compile
-`xelatex resume_cv.tex` 
+`xelatex CV_XiongDing.tex`
 
 Source files come from [Awesome CV](https://github.com/posquit0/Awesome-CV).
 

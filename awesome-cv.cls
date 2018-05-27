@@ -621,7 +621,18 @@
   \vspace{-0.2em}
 }
 
-\newcommand*{\cveducation}[5]{%
+\newcommand*{\cveducation}[6]{%
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 13cm} R{2cm} R{4.5cm} R{3cm} R{3.5cm}}
+      \entrydegreestyle{#1} & \entrylocationstyle{#2} &
+      \entrypositionstyle{#3} & \entrypositionstyle{#4} & \entrydatestyle{#5} \\
+    \multicolumn{5}{L{\textwidth}}{\descriptionstyle{#6}} \\
+  \end{tabular*}
+  \vspace{-1.5em}
+}
+
+\newcommand*{\cvcourse}[5]{%
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 11cm} R{4.5cm} R{3cm} R{3.5cm}}
@@ -637,7 +648,7 @@
   \setlength{\extrarowheight}{0pt}
 	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 13cm} R{2cm} R{4.5cm} R{3cm} R{3.5cm}}
       \entrydegreestyle{#1} & \entrylocationstyle{#2} &
-			\entrypositionstyle{#3} & \entrydatestyle{#4} & \entrydegreestyle{#5} \\
+			\entrypositionstyle{#3} & \entrypositionstyle{#4} & \entrydatestyle{#5} \\
   \end{tabular*}
   \vspace{-1.5em}
 }
@@ -652,14 +663,14 @@
   \vspace{-0.5em}
 }
 
-\newcommand*{\cvindustry}[5]{%
+\newcommand*{\cvindustry}[6]{%
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 6.5cm} R{3cm} R{3.5cm}}
-      \industrytitlestyle{#1} & \entrypositionstyle{#2} &
-      \entrydatestyle{#3} \\
-    \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#4}} \\
-    \multicolumn{3}{L{\textwidth}}{\descriptionstyle{#5}} \\
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{3cm} L{\textwidth - 9.5cm} R{3cm} R{3.5cm}}
+      \industrytitlestyle{#1} & \industrytitlestyle{#2} & \entrypositionstyle{#3} &
+      \entrydatestyle{#4} \\
+    \multicolumn{4}{L{\textwidth}}{\descriptionstyle{#5}} \\
+    \multicolumn{4}{L{\textwidth}}{\descriptionstyle{#6}} \\
   \end{tabular*}
   \vspace{-2em}
 }
