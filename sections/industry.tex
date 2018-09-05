@@ -32,10 +32,8 @@
 	\item \researchitemstyle{Details:} 
 		\begin{spacing}{0.3} 
 	    \begin{itemize}[leftmargin=2ex, nosep, noitemsep]   
-	    \item 
-	    	\descriptionstyle{I am the only person who works on this company-wide service.}
 	    \item
-	    	\descriptionstyle{Implement \textbf{review sorting} logic for production page based on review language and user countries.}
+	    	\descriptionstyle{Increase the performance of this service: P95 latency from 85ms to 45ms.}
 	    \item
 	    	\descriptionstyle{Setup \textbf{review Elasticsearch} cluster for full-text search on reviews on listing pages.}
 	    \item
@@ -48,7 +46,7 @@
 	    \item \researchitemstyle{QPS:} 
 	    	\descriptionstyle{Average: 10K. Peak: 12K. Traffic comes from room description page, user profile page, checkout page and so on.}
 	    \item \researchitemstyle{Latency:} 
-	    	\descriptionstyle{Overall, P95: $\sim$50ms; $\sim$P99: $\sim$80ms; P999: $\sim$250ms. Different endpoints have different latency.}
+	    	\descriptionstyle{Overall, P95: $\sim$45ms; $\sim$P99: $\sim$80ms; P999: $\sim$250ms. Different endpoints have different latency.}
 	    \item \researchitemstyle{Features:}
 	    	\descriptionstyle{{\bullet} Mcrouter cache enabled {\bullet} Horizontal scalable {\bullet} Accompanied by mutation publisher}
 	    \end{itemize}
