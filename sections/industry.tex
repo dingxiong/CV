@@ -2,7 +2,7 @@
 %	SECTION TITLE
 %---------------------------------------------------------------------------
 
-\cvsection{Current Experience}
+\cvsection{Industry Experience}
 
 %---------------------------------------------------------------------------
 %	SECTION CONTENT
@@ -21,45 +21,58 @@
 % 	{Django in Python}
 % 	{{\bullet} Email back grades automatically {\bullet} Publish grade statistics {\bullet} Grade panel for course instructors}
 % }
-\cvindustry
-{Airbnb}{Software Engineer}{San Francisco, CA, USA}{May. 2017 -- Present}
-{Infrastructure team}
-{
-	\vspace{-0.7em}
-	\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-	\item \researchitemstyle{Main responsibility:} 
-		\begin{spacing}{0.3}
-			\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-				\item \descriptionstyle{Build and maintain \underline{Ebert} (the review service) for \emph{airbnb.com}.}
-				\item \descriptionstyle{Propose and build the next generation of review platform \underline{Ebert2.0}}
-			\end{itemize}
-		\end{spacing}
-	\item \researchitemstyle{Details:} 
-		\begin{spacing}{0.3} 
-	    \begin{itemize}[leftmargin=2ex, nosep, noitemsep]   
-	    \item
-	    	\descriptionstyle{Increase the performance of this service: P95 latency from 85ms to 45ms.}
-	    \item
-	    	\descriptionstyle{Setup \textbf{review Elasticsearch} cluster for full-text search on reviews on listing pages.}
-	    \item
-	    	\descriptionstyle{Cooperate with core-storage team to build \textbf{review pipeline} to serve review aggregated data, i.e, review count, review overall rating.}
-	    \end{itemize}
-	  \end{spacing}
-	\item \researchitemstyle{Core metrics\&features :} 
-		\begin{spacing}{0.3} 
-	    \begin{itemize}[leftmargin=2ex, nosep, noitemsep]   
-	    \item \researchitemstyle{QPS:} 
-	    	\descriptionstyle{Average: 10K. Peak: 12K. Traffic comes from room description page, user profile page, checkout page and so on.}
-	    \item \researchitemstyle{Latency:} 
-	    	\descriptionstyle{Overall, P95: $\sim$45ms; $\sim$P99: $\sim$80ms; P999: $\sim$250ms. Different endpoints have different latency.}
-	    \item \researchitemstyle{Features:}
-	    	\descriptionstyle{{\bullet} Mcrouter cache enabled {\bullet} Horizontal scalable {\bullet} Accompanied by mutation publisher}
-	    \end{itemize}
-	  \end{spacing}
-	\item \researchitemstyle{Framework \& tools:} 
-		\descriptionstyle{Dropwizard, Chef, Airflow, Elasticsearch, Mcrouter Cache, Powergrid(multithreading)}
-	\end{itemize}
-}
+
+%------------------------------------------------
+\company{Airbnb}{Software Engineer}{San Francisco, CA, USA}{May. 2017 -- Present} 
+\team{Search ranking team}{Mar. 2019 -- Present}
+
+\vspace{-2em}
+
+\begin{itemize}[leftmargin=5ex, nosep, noitemsep]
+\item \researchitemstyle{Main responsibility:} 
+	\begin{spacing}{0.5}
+		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+			\item \descriptionstyle{Migrate user profiler features for a customized KV store to HBase and use Apache Flink for better streaming performance.}
+			\item \descriptionstyle{Prepare training data of big size by daily scheduled spark jobs.}
+		\end{itemize}
+	\end{spacing}
+\item \researchitemstyle{Used framework \& tools:} 
+	\descriptionstyle{Spark, Hive, Airflow, Scala}	
+\end{itemize}
+
+\vspace{-1em}
+
+\team{Home infra team}{May. 2017 -- Feb. 2019}
+\vspace{-2em}
+\begin{itemize}[leftmargin=5ex] % [leftmargin=2ex, nosep, noitemsep]
+\categoryitem{Main contributions:}
+	\begin{spacing}{0.5}
+		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+			\workitem{Lead the project of building the next generation of review service, i.e., Ebert2.0, for Airbnb. 
+				This is also a review platform that supports homes reviews, experience reviews, LuxuryRetreat reviews and so on.
+				We have successfully migrated 340+M reviews and 1B+ review categories to new review schema without downtime, and 
+				there were only 3 inconsistent records after migration.}
+			\workitem{Collaborate with storage team to setup the derived data store to provide review aggregated data, 
+				which improved the tail latency by half (P95 latency from 85ms to 45ms).}
+			\workitem{Migrate AWS EC2 review Elasticsearch cluster to AWS managed ES cluster. Also upgrade ES version from 1.4.5 to 6.2.1}
+			\workitem{Maintaining current review service add and new features such as group companion review, highlighted reviews on checkout page, review ranking logic on production page, reviews pipelines for SEO purpose and so on.}
+		\end{itemize}
+	\end{spacing}
+\item \researchitemstyle{Core metrics\&features:} 
+	\begin{spacing}{0.3} 
+    \begin{itemize}[leftmargin=2ex, nosep, noitemsep]   
+    \item \researchitemstyle{QPS:} 
+    	\descriptionstyle{Average: 12K. Peak: 15K. Traffic comes from room description page, user profile page, checkout page and so on.}
+    \item \researchitemstyle{Latency:} 
+    	\descriptionstyle{Overall, P95: $\sim$45ms; $\sim$P99: $\sim$80ms; P999: $\sim$250ms. Different endpoints have different latency.}
+    \item \researchitemstyle{Features:}
+    	\descriptionstyle{{\bullet} Mcrouter cache enabled {\bullet} Horizontal scalable {\bullet} Accompanied by mutation publisher}
+    \end{itemize}
+  \end{spacing}
+\item \researchitemstyle{Used framework \& tools:} 
+	\descriptionstyle{Dropwizard, Chef, Airflow, Elasticsearch, Mcrouter Cache, Powergrid(multithreading)}
+\end{itemize}
+
 
 % \cvindustry
 % {Software Engineer @ Airbnb}{San Francisco, CA, USA}{May. 2017 -- Present}

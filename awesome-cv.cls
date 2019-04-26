@@ -213,6 +213,7 @@
 %                Configuration for styles
 %-------------------------------------------------------------------------------
 
+\newcommand{\largefs}{10pt}
 \newcommand{\commonfs}{9pt}
 \newcommand{\commonlss}{0.8em}
 % Configure styles for each CV elements
@@ -242,7 +243,6 @@
 %\newcommand*{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\upshape\color{text} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfontlight\color{black} #1}}
 \newcommand*{\entrydegreestyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\color{black} #1}}
-\newcommand*{\industrytitlestyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\color{black} #1}}
 \newcommand*{\researchtitlestyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\color{black} #1}}
 \newcommand*{\researchitemstyle}[1]{{\fontsize{9pt}{1pt}\bodyfont\color{lighttext} #1}}
 
@@ -268,7 +268,36 @@
 \newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
 
+% For industry jobs
+\newcommand*{\companynamestyle}[1]{{\fontsize{\largefs}{\commonlss}\bodyfont\color{black} #1}}
+\newcommand*{\industrytitlestyle}[1]{{\fontsize{\largefs}{\commonlss}\bodyfont\color{black} #1}}
+\newcommand*{\industrylocationstyle}[1]{{\fontsize{\largefs}{\commonlss}\bodyfont\color{graytext} #1}}
+\newcommand*{\industrydatestyle}[1]{{\fontsize{\largefs}{\commonlss}\bodyfont\slshape\color{graytext} #1}}
+\newcommand*{\industrysmalldatestyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\slshape\color{graytext} #1}}
+%\newcommand*{\teamnamestyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\color{black} \rule{10pt}{.4pt} #1 \rule{15pt}{.4pt}}}
+\newcommand*{\teamnamestyle}[1]{{\fontsize{\commonfs}{\commonlss}\bodyfont\color{black} #1 \rule{20pt}{.4pt}}}
 
+\newcommand*{\company}[4]{%
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{3cm} L{\textwidth - 12cm} R{5cm} R{3.5cm}}
+    \companynamestyle{#1} & \industrytitlestyle{#2} & \industrylocationstyle{#3} & \industrydatestyle{#4} \\
+  \end{tabular*}
+  %\vspace{-2em}
+}
+
+\newcommand*{\team}[2]{
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{8cm} R{\textwidth - 8.5cm}}
+    \teamnamestyle{#1} & \industrysmalldatestyle{#2} \\
+    %\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#3}} \\
+  \end{tabular*}
+  %\vspace{-2em}
+}
+
+\newcommand*{\categoryitem}[1]{\item \researchitemstyle{#1}}
+\newcommand*{\workitem}[1]{\item \descriptionstyle{#1}}
 %-------------------------------------------------------------------------------
 %                Commands for personal information
 %-------------------------------------------------------------------------------
@@ -663,17 +692,6 @@
   \vspace{-0.5em}
 }
 
-\newcommand*{\cvindustry}[6]{%
-  \setlength\tabcolsep{0pt}
-  \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{3cm} L{\textwidth - 9.5cm} R{3cm} R{3.5cm}}
-      \industrytitlestyle{#1} & \industrytitlestyle{#2} & \entrypositionstyle{#3} &
-      \entrydatestyle{#4} \\
-    \multicolumn{4}{L{\textwidth}}{\descriptionstyle{#5}} \\
-    \multicolumn{4}{L{\textwidth}}{\descriptionstyle{#6}} \\
-  \end{tabular*}
-  \vspace{-2em}
-}
 
 \newcommand*{\cvresearch}[4]{%
   \setlength\tabcolsep{0pt}
