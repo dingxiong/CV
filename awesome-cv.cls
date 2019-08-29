@@ -280,7 +280,7 @@
 \newcommand*{\company}[4]{%
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{3cm} L{\textwidth - 12cm} R{5cm} R{3.5cm}}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{3cm} L{\textwidth - 14cm} R{5cm} R{5cm}}
     \companynamestyle{#1} & \industrytitlestyle{#2} & \industrylocationstyle{#3} & \industrydatestyle{#4} \\
   \end{tabular*}
   %\vspace{-2em}
