@@ -703,7 +703,7 @@
   \vspace{-1em}
 }
 
-\newcommand*{\cvresearchitem}[3]{%
+\newcommand*{\cvresearchitem}[2]{%
   \vspace{-0.7em}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
   \item 
@@ -711,7 +711,7 @@
     \begin{spacing}{0.5} 
       \begin{itemize}[leftmargin=2ex, nosep, noitemsep]   
       \item \researchitemstyle{main Result:} \descriptionstyle{#2}
-      \item \researchitemstyle{tools/skills used:} \descriptionstyle{#3}
+      %\item \researchitemstyle{tools/skills used:} \descriptionstyle{#3}
       \end{itemize}
     \end{spacing}
   \end{itemize}
