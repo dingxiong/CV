@@ -29,30 +29,33 @@
 \iftrue  % comment out this secontion
 
 \company{Ziphq}{Software Engineer}{San Francisco, CA, USA}{04/18/2022 -- Present}
-\team{Infra structure}{}
+\team{Infrastructure}{}
 
 \vspace{-2em}
 
 \begin{itemize}[leftmargin=5ex] % nosep, noitemsep]
-\categoryitem{Onboard Kafka and build a streaming platform}
+\categoryitem{Onboard Kafka, Clickhouse and build a streaming platform}
 \vspace{-0.7em}
 	\begin{spacing}{0.6}
 		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
 			\workitem{Onboard AWS MSK and wrap the producer/consumer library to be used our engineers.}
-			\workitem{Set up database CDC and use mutation events from database to drive varisou async computations.}
-		\end{itemize}
-	\end{spacing}
-\vspace{-0.2em}
-\categoryitem{Onboard OLAP database Clickhouse}
-\vspace{-0.7em}
-	\begin{spacing}{0.6}
-		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+			\workitem{Set up database CDC and use mutation events from database to drive various async computations.}
 			\workitem{Evaluate various OLAP databases and chose Clickohuse to power Zip insight functionality.}
 		\end{itemize}
 	\end{spacing}
 \vspace{-0.2em}
+\categoryitem{Cloud Infrastructure}
+\vspace{-0.7em}
+	\begin{spacing}{0.6}
+		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+			\workitem{Set up a logging ETL pipeline (vector, Kafka, logstash, Elasticsearch) on top of k8s to power visibility for Zip engineers.}
+			\workitem{Upgrade AWS EKS from v1.19 to v1.24.}
+			\workitem{Build an async webhook framework using AWS Lambda and Kafka.}
+		\end{itemize}
+	\end{spacing}
+\vspace{-0.2em}
 \categoryitem{Used framework \& tools:}
-	\descriptionstyle{AWS, Kafka, Clickhouse, Kubernetes}
+	\descriptionstyle{Python, Kafka, Clickhouse, Kubernetes}
 \end{itemize}
 
 %--- set space -----
