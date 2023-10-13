@@ -24,25 +24,66 @@
 % }
 
 %------------------------------------------------
+% Ziphq
+%------------------------------------------------
+\iftrue  % comment out this secontion
+
+\company{Ziphq}{Software Engineer}{San Francisco, CA, USA}{04/18/2022 -- Present}
+\team{Infra structure}{}
+
+\vspace{-2em}
+
+\begin{itemize}[leftmargin=5ex] % nosep, noitemsep]
+\categoryitem{Onboard Kafka and build a streaming platform}
+\vspace{-0.7em}
+	\begin{spacing}{0.6}
+		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+			\workitem{Onboard AWS MSK and wrap the producer/consumer library to be used our engineers.}
+			\workitem{Set up database CDC and use mutation events from database to drive varisou async computations.}
+		\end{itemize}
+	\end{spacing}
+\vspace{-0.2em}
+\categoryitem{Onboard OLAP database Clickhouse}
+\vspace{-0.7em}
+	\begin{spacing}{0.6}
+		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+			\workitem{Evaluate various OLAP databases and chose Clickohuse to power Zip insight functionality.}
+		\end{itemize}
+	\end{spacing}
+\vspace{-0.2em}
+\categoryitem{Used framework \& tools:}
+	\descriptionstyle{AWS, Kafka, Clickhouse, Kubernetes}
+\end{itemize}
+
+%--- set space -----
+\vspace{-0.5em}
+\begin{flushleft}
+\rule{0.6\textwidth}{0.4pt}
+\end{flushleft}
+\vspace{-0.1em}
+
+\fi
+
+%------------------------------------------------
 % Citadel
 %------------------------------------------------
 \iftrue  % comment out this secontion
 
-\company{Citadel LLC}{Software Engineer}{Chicago, IL, USA}{09/03/2019 -- Present} 
+\company{Citadel LLC}{Software Engineer}{Chicago, IL, USA}{09/03/2019 -- 03/18/2022}
 \team{Reconciliations and Control infra team}{}
 
 \vspace{-2em}
 
 \begin{itemize}[leftmargin=5ex] % nosep, noitemsep]
-\categoryitem{Build rec\&control system v3:} 
+\categoryitem{Build rec\&control system v3:}
 \vspace{-0.7em}
 	\begin{spacing}{0.6}
 		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-			\workitem{ Help design the new reconciliation system from scratch. 
+			\workitem{ Help design the new reconciliation system from scratch.
 				Share my knowledge about the old system to all new members in the team.}
-			\workitem{ 
+			\workitem{
 				Build infra components of the new system such as Kafka C++ client, datadog C++ client, logging module and so on. }
-			\workitem{ Help build the core matching C++ service using Apache Arrow. 
+			\workitem{ Help build the core matching C++ service using Apache Arrow.
 				Optimize the matching process, especially the hot path to reduce run time as much as possible. }
 		\end{itemize}
 	\end{spacing}
@@ -62,15 +103,15 @@
 \vspace{-0.7em}
 	\begin{spacing}{0.6}
 		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-			\workitem{ Maintain v2 system and add business features on a regular basis. 
+			\workitem{ Maintain v2 system and add business features on a regular basis.
 				Maintain a good relationship with business side and act as POC for production issues.}
-			\workitem{ Help automate Futures/Options,  FTR (Financial Transmission Right), 
+			\workitem{ Help automate Futures/Options,  FTR (Financial Transmission Right),
 				and a few other OTC products reconciliation process. }
 		\end{itemize}
 	\end{spacing}
 \vspace{-0.2em}
-\categoryitem{Used framework \& tools:} 
-	\descriptionstyle{C++ Boost, Apache.Arrow, Spring Boot, multithreading, MS SQL server, Kafka, Datadog}	
+\categoryitem{Used framework \& tools:}
+	\descriptionstyle{C++ Boost, Apache.Arrow, Spring Boot, multithreading, MS SQL server, Kafka, Datadog}
 \end{itemize}
 
 %--- set space -----
@@ -80,29 +121,29 @@
 \end{flushleft}
 \vspace{-0.1em}
 
-\fi 
+\fi
 
 %------------------------------------------------
-% Airbnb 
+% Airbnb
 %------------------------------------------------
 
-\company{Airbnb}{Software Engineer}{San Francisco, CA, USA}{05/22/2017 -- 08/27/2019} 
+\company{Airbnb}{Software Engineer}{San Francisco, CA, USA}{05/22/2017 -- 08/27/2019}
 \team{Search ranking team}{03/01/2019 -- 08/27/2019}
 
 \vspace{-2em}
 
 \begin{itemize}[leftmargin=5ex] % nosep, noitemsep]
-\categoryitem{Main contribution:} 
+\categoryitem{Main contribution:}
 	\begin{spacing}{0.5}
 		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-			\workitem{  migrate the heaviest job from RDD to Dataset, 
+			\workitem{  migrate the heaviest job from RDD to Dataset,
 				whose runtime was reduced from 3h to 30m. }
 			\workitem{ Use a new way to attribute user searches to their final bookings, which doubled the size of training data.}
 		\end{itemize}
 	\end{spacing}
 \vspace{-0.2em}
-\categoryitem{Used framework \& tools:} 
-	\descriptionstyle{Spark, Hive, Airflow, Scala}	
+\categoryitem{Used framework \& tools:}
+	\descriptionstyle{Spark, Hive, Airflow, Scala}
 \end{itemize}
 
 \vspace{-0.2em}
@@ -113,7 +154,7 @@
 \categoryitem{Main contributions:}
 	\begin{spacing}{0.5}
 		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-			\workitem{Build the next generation of review service for Airbnb. 
+			\workitem{Build the next generation of review service for Airbnb.
 				This is a review platform that supports different business verticals' reviews.
 				We had successfully migrated 340+M reviews and 1B+ review categories to new review schema without downtime.}
 			\workitem{Collaborate with storage team to setup the derived data store to provide real-time review aggregated data, i.e., review counts,
@@ -122,7 +163,7 @@
 		\end{itemize}
 	\end{spacing}
 \vspace{-0.2em}
-\categoryitem{Used framework \& tools:} 
+\categoryitem{Used framework \& tools:}
 	\descriptionstyle{Dropwizard, Chef, Airflow, Elasticsearch, Mcrouter Cache, Powergrid(multithreading)}
 \end{itemize}
 
