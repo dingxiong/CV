@@ -22,20 +22,20 @@
 \vspace{-2em}
 
 \begin{itemize}[leftmargin=5ex] % nosep, noitemsep]
-\categoryitem{Online storage team}
+\categoryitem{Online Storage Team}
 \vspace{-0.5em}
 	\begin{spacing}{0.6}
 		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-      \workitem{Design and implement a peer-to-peer RPC topology for the file cache service 
-        which reduced Azure bandwidth usage by 90\%.} 
-      \workitem{Optimize RocksDB for a latency sensitive use case which reduced metadata cache-miss by 95\%.}
-      \workitem{Improve GRPC talil latency by ~50\% using various tuning and 
-        optmizations : multi-channel, linux sendmsg MSG\_ZEROCOPY, etc.}
+      \workitem{Designed and implemented a peer-to-peer RPC topology for the file cache service,
+        reducing Azure Blob Storage egress by 90\%.} 
+      \workitem{Optimized RocksDB for a latency-sensitive use case, reducing metadata cache misses by 95\%.}
+      \workitem{Improved gRPC tail latency by approximately 50\% through optimizations including multiple channels
+        and Linux sendmsg with MSG\_ZEROCOPY.}
 		\end{itemize}
 	\end{spacing}
 \vspace{-0.2em}
 \categoryitem{Tools \& Technologies:}
-	\descriptionstyle{C++, Azure blob storage}
+	\descriptionstyle{C++, RocksDB, Azure Blob Storage}
 \end{itemize}
 
 %--- set space -----
@@ -58,13 +58,13 @@
 \vspace{-2em}
 
 \begin{itemize}[leftmargin=5ex] % nosep, noitemsep]
-\categoryitem{Tech Lead of Core Infra}
+\categoryitem{Tech Lead, Core Infrastructure}
 \vspace{-0.5em}
 	\begin{spacing}{0.6}
 		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-      \workitem{Mentor junior engineers, help them become domain owners, and guide them toward success.}
-      \workitem{Quarterly team planning; accountable for priorities, execution, and outcomes.}
-      \workitem{Debug the most challenging technical issues and production bugs.}
+      \workitem{Mentored junior engineers, helped them become domain owners, and guided them toward success.}
+      \workitem{Led quarterly team planning and took responsibility for priorities, execution, and outcomes.}
+      \workitem{Debugged the most challenging technical issues and production bugs.}
 		\end{itemize}
 	\end{spacing}
 \vspace{-0.2em}
@@ -72,18 +72,18 @@
 \vspace{-0.5em}
 	\begin{spacing}{0.6}
 		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-      \workitem{Migrate Zip from a single data center artchetchure to a multi-datacenter artchetchure, and implement 
-      the traffic routing strategies.}
-      \workitem{Migrated Ziphq’s primary database from MySQL to Aurora PostgreSQL, improving performance by ~60\% and reduced storage footprint by ~50\%.}
-      \workitem{Introduced Kafka; built the company-wide streaming platform and inbound webhook framework. Help payment team to onboard worfklows to this streaming platform.}
+      \workitem{Migrated Zip from a single-data-center architecture to a multi-data-center architecture and implemented
+      traffic routing strategies.}
+      \workitem{Migrated Ziphq’s primary database from MySQL to Aurora PostgreSQL, improving performance by approximately 60\% and reducing the storage footprint by approximately 50\%.}
+      \workitem{Introduced Kafka; built the company-wide streaming platform and inbound webhook framework. Helped the payments team migrate workflows to the streaming platform.}
       \workitem{Drove adoption of database CDC streams across multiple product teams.}
-      \workitem{Upgraded Kubernetes from v1.19 → v1.24.}
+      \workitem{Upgraded Kubernetes from v1.19 to v1.24.}
       \workitem{Built numerous internal productivity tools for product engineering teams.}
 		\end{itemize}
 	\end{spacing}
 \vspace{-0.2em}
 \categoryitem{Tools \& Technologies:}
-	\descriptionstyle{Python, Kafka, Postgres, Kubernetes}
+	\descriptionstyle{Python, Kafka, PostgreSQL, Kubernetes}
 \end{itemize}
 
 %--- set space -----
@@ -101,12 +101,12 @@
 \iftrue  % comment out this secontion
 
 \company{Citadel LLC}{Software Engineer}{Chicago, IL, USA}{09/2019 -- 03/2022}
-\team{Reconciliations and Control infra team}{}
+\team{Reconciliations and Control Infrastructure Team}{}
 
 \vspace{-2em}
 
 \begin{itemize}[leftmargin=5ex] % nosep, noitemsep]
-\categoryitem{Build rec\&control system v3:}
+\categoryitem{Reconciliation and Control System v3:}
 \vspace{-0.7em}
 	\begin{spacing}{0.6}
 		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
@@ -121,15 +121,15 @@
 \vspace{-0.7em}
 	\begin{spacing}{0.6}
 		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-			\workitem{ Main contributor for disaster recovery (DR) planning and execution.
+			\workitem{ Served as a primary contributor to disaster recovery (DR) planning and execution.
         Successfully executed multiple data center failovers with zero user impact.}
-      \workitem{Maintained and enhanced the v2 system; acted as POC for production issues.}
-      \workitem{Automated Futures/Options, FTR (Financial Transmission Right), and other OTC product reconciliation workflows.}
+      \workitem{Maintained and enhanced the v2 system; served as the point of contact for production issues.}
+      \workitem{Automated reconciliation workflows for futures, options, financial transmission rights (FTRs), and other OTC products.}
 		\end{itemize}
 	\end{spacing}
 \vspace{-0.2em}
 \categoryitem{Tools \& Technologies:}
-	\descriptionstyle{C++ Boost, Apache.Arrow, Spring Boot, MS SQL server, Kafka}
+	\descriptionstyle{C++, Boost, Apache Arrow, Spring Boot, Microsoft SQL Server, Kafka}
 \end{itemize}
 
 %--- set space -----
@@ -146,16 +146,16 @@
 %------------------------------------------------
 
 \company{Airbnb}{Software Engineer}{San Francisco, CA, USA}{05/2017 -- 08/2019}
-\team{Search ranking team}{03/2019 -- 08/2019}
+\team{Search Ranking Team}{03/2019 -- 08/2019}
 
 \vspace{-2em}
 
 \begin{itemize}[leftmargin=5ex] % nosep, noitemsep]
-\categoryitem{Main contribution:}
+\categoryitem{Main contributions:}
 	\begin{spacing}{0.5}
 		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-      \workitem{Migrated the heaviest batch job from RDD to Dataset, reducing runtime from 3 hours to 30 minutes.}
-      \workitem{Developed a new method to attribute user searches to final bookings, doubling the size of training data.}
+      \workitem{Migrated the heaviest batch job from the RDD API to the Dataset API, reducing runtime from 3 hours to 30 minutes.}
+      \workitem{Developed a new method to attribute user searches to final bookings, doubling the size of the training dataset.}
 		\end{itemize}
 	\end{spacing}
 \vspace{-0.2em}
@@ -165,7 +165,7 @@
 
 \vspace{-0.2em}
 
-\team{Home infra team}{05/2017 -- 2/2019}
+\team{Home Infrastructure Team}{05/2017 -- 02/2019}
 \vspace{-2em}
 \begin{itemize}[leftmargin=5ex] % [leftmargin=2ex, nosep, noitemsep]
 \categoryitem{Technical owner of the review platform:}
@@ -173,13 +173,13 @@
 		\begin{itemize}[leftmargin=2ex, nosep, noitemsep]
       \workitem{Built the next-generation review service supporting multiple business verticals.}
       \workitem{Migrated 340M+ reviews and 1B+ review categories to a new schema with zero downtime.}
-      \workitem{Partnered with the storage team to build a derived data store offering low-latency aggregated review metrics (counts, rating histograms, etc.), cutting tail latency by ~50\%.}
-      \workitem{Migrated the EC2-hosted Elasticsearch cluster to AWS-managed Elasticsearch and upgraded the ES version from 1.4.5 → 6.2.1.}
+      \workitem{Partnered with the storage team to build a derived data store offering low-latency aggregated review metrics (counts, rating histograms, etc.), cutting tail latency by approximately 50\%.}
+      \workitem{Migrated the EC2-hosted Elasticsearch cluster to AWS-managed Elasticsearch and upgraded the ES version from 1.4.5 to 6.2.1.}
 		\end{itemize}
 	\end{spacing}
 \vspace{-0.2em}
 \categoryitem{Tools \& Technologies:}
-	\descriptionstyle{Dropwizard, Chef, Airflow, Elasticsearch, Mcrouter Cache, Powergrid(multithreading)}
+	\descriptionstyle{Dropwizard, Chef, Airflow, Elasticsearch, Mcrouter Cache, Powergrid (multithreading)}
 \end{itemize}
 
 
